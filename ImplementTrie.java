@@ -8,20 +8,11 @@ public class Trie {
   public class TrieNode {
 
       TrieNode[] children;
-
       boolean isWord;
-
-      char c;//其实路径的index就可以代表字母了 c可以不需要的
-
-      //Map<Character, TrieNode> map;
-
-      //String word;//这两个可加可不加的东西没太看懂是干什么用的
-
       public TrieNode() {
           children = new TrieNode[26];
           isWord = false;
       }
-
   }
 
     TrieNode root;
